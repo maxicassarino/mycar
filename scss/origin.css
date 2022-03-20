@@ -1,0 +1,487 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TitilliumWeb-ExtraLight";
+  src: url("../assets/fonts/TitilliumWeb-ExtraLight.ttf");
+}
+
+body {
+  font-family: "TitilliumWeb-ExtraLight";
+  background-color: black;
+}
+
+.Footer {
+  color: white;
+}
+
+/* MENU */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: rgba(255, 1, 128, 0.452);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+/* INICIO */
+h2 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 35px;
+  width: 65%;
+}
+
+h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.Inicio a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 2px solid;
+  padding: 10px 20px;
+  border-color: white;
+  border-radius: 30px;
+}
+
+.Inicio a:hover {
+  background-color: rgba(255, 1, 128, 0.452);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.GridInicio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  -ms-grid-rows: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+  justify-items: center;
+}
+
+/* NUESTRAS OFERTAS */
+h4 {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.OfertasOrg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5%;
+}
+
+.OfertasTabla {
+  color: white;
+  border-color: white;
+}
+
+/* CAMBIA TU AUTO */
+fieldset {
+  color: white;
+  border-color: white;
+}
+
+fieldset {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* ANIMACIONES */
+nav {
+  -webkit-animation-name: Opacidad;
+          animation-name: Opacidad;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+h2 {
+  -webkit-animation-name: Opacidad;
+          animation-name: Opacidad;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.Inicio div {
+  -webkit-animation-name: Opacidad;
+          animation-name: Opacidad;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+fieldset {
+  -webkit-animation-name: Opacidad;
+          animation-name: Opacidad;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes Opacidad {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes Opacidad {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  /* FOOTER */
+  Footer {
+    padding-top: 40px;
+  }
+  .Footer {
+    font-size: 20px;
+    position: relative;
+    left: 82%;
+  }
+  /* Menu */
+  .logo {
+    font-size: 22px;
+  }
+  .nav-links {
+    width: 45%;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+  /* INICIO */
+  .Inicio {
+    width: 88vh;
+    height: 92vh;
+    margin-left: 12%;
+    padding-top: 5%;
+  }
+  .Inicio div {
+    padding-top: 15%;
+  }
+  .Inicio a {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  #Ofertas {
+    width: 25vw;
+    height: 35vh;
+  }
+  #Primer {
+    width: 25vw;
+    height: 32vh;
+  }
+  #Marcas {
+    width: 25vw;
+    height: 25vh;
+    padding-top: 20px;
+  }
+  #Buscar {
+    width: 25vw;
+    height: 25vh;
+    padding-top: 20px;
+  }
+  #Cotizar {
+    width: 25vw;
+    height: 35vh;
+  }
+  #Concesionaria {
+    width: 25vw;
+    height: 20vh;
+    padding-top: 25px;
+  }
+  /* NUESTRAS OFERTAS */
+  h4 {
+    font-size: 25px;
+    position: relative;
+    left: 12%;
+    width: 90vh;
+  }
+  .SeccionOfertas {
+    padding-top: 5%;
+  }
+  .OfertasTabla {
+    width: 60vw;
+  }
+  .Autos {
+    width: 32vw;
+    height: 45vh;
+  }
+  /* TU PRIMER 0KM */
+  .SeccionPrimer {
+    padding-top: 5%;
+  }
+  /* CAMBIA TU AUTO */
+  fieldset {
+    width: 30vw;
+  }
+  fieldset:hover {
+    width: 80vw;
+  }
+}
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px) {
+  /* FOOTER */
+  Footer {
+    padding-top: 40px;
+  }
+  .Footer {
+    font-size: 12px;
+    position: relative;
+    left: 82%;
+  }
+  /* Menu */
+  .logo {
+    font-size: 16px;
+  }
+  .nav-links {
+    width: 75%;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+  /* INICIO */
+  .Inicio {
+    width: 60vh;
+    height: 92vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 25%;
+  }
+  .Inicio div {
+    padding-top: 15%;
+  }
+  .Inicio a {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  #Ofertas {
+    width: 25vw;
+    height: 15vh;
+    padding-top: 20px;
+  }
+  #Primer {
+    width: 28vw;
+    height: 15vh;
+    padding-top: 20px;
+  }
+  #Marcas {
+    width: 25vw;
+    height: 12vh;
+    padding-top: 20px;
+  }
+  #Buscar {
+    width: 28vw;
+    height: 15vh;
+    padding-top: 20px;
+  }
+  #Cotizar {
+    width: 25vw;
+    height: 15vh;
+  }
+  #Concesionaria {
+    width: 35vw;
+    height: 15vh;
+    padding-top: 25px;
+  }
+  /* NUESTRAS OFERTAS */
+  h4 {
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    width: 90vh;
+  }
+  .SeccionOfertas {
+    padding-top: 5%;
+  }
+  .OfertasTabla {
+    width: 80vw;
+    font-size: 12px;
+  }
+  .Autos {
+    width: 40vw;
+    height: 25vh;
+  }
+  /* TU PRIMER 0KM */
+  .SeccionPrimer {
+    padding-top: 5%;
+  }
+  /* CAMBIA TU AUTO */
+  fieldset {
+    width: 80vw;
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+  /* FOOTER */
+  Footer {
+    padding-top: 40px;
+  }
+  .Footer {
+    font-size: 12px;
+    position: relative;
+    left: 82%;
+  }
+  /* Menu */
+  .logo {
+    font-size: 16px;
+  }
+  .nav-links {
+    width: 75%;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+  /* INICIO */
+  .Inicio {
+    width: 50vh;
+    height: 92vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 25%;
+  }
+  .Inicio div {
+    padding-top: 15%;
+  }
+  .Inicio a {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  #Ofertas {
+    width: 25vw;
+    height: 15vh;
+    padding-top: 20px;
+  }
+  #Primer {
+    width: 28vw;
+    height: 15vh;
+    padding-top: 20px;
+  }
+  #Marcas {
+    width: 25vw;
+    height: 12vh;
+    padding-top: 20px;
+  }
+  #Buscar {
+    width: 28vw;
+    height: 15vh;
+    padding-top: 20px;
+  }
+  #Cotizar {
+    width: 25vw;
+    height: 15vh;
+  }
+  #Concesionaria {
+    width: 35vw;
+    height: 15vh;
+    padding-top: 25px;
+  }
+  /* NUESTRAS OFERTAS */
+  h4 {
+    font-size: 14px;
+    position: relative;
+    left: 5%;
+    width: 90vh;
+  }
+  .SeccionOfertas {
+    padding-top: 5%;
+  }
+  .OfertasTabla {
+    width: 80vw;
+    font-size: 12px;
+  }
+  .Autos {
+    width: 50vw;
+    height: 25vh;
+  }
+  /* TU PRIMER 0KM */
+  .SeccionPrimer {
+    padding-top: 5%;
+  }
+  /* CAMBIA TU AUTO */
+  fieldset {
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=origin.css.map */
