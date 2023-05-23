@@ -21,10 +21,10 @@
     }
     /* MAIN */
     .titulos {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     /* PORTADA */
     #portada {
@@ -50,7 +50,7 @@
         display: none;
     }
     #primer2 {
-        height: 80vh;
+        height: 50vh;
         margin: 0px 5vw;
         display: flex;
         flex-direction: column;
@@ -61,11 +61,11 @@
         text-align: center;
     }
     #primer2 img {
-        width: 75%;
+        width: 55%;
     }
     /* OFERTAS */
     #ofertas {
-        height: 80vh;
+        height: 55vh;
         margin: 0px 5vw;
         display: flex;
         flex-direction: column;
@@ -73,11 +73,11 @@
         align-items: center;
     }
     #ofertas img {
-        width: 75%;
+        width: 55%;
     }
     /* CAMBIAR */
     #cambiar {
-        height: 85vh;
+        height: 55vh;
         margin: 0px 5vw;
         display: flex;
         flex-direction: column;
@@ -85,19 +85,19 @@
         text-align: center;
     }
     #cambiar-title {
-        font-size: 2em;
-        letter-spacing: 1.2px;
+        font-size: 1.7em;
+        letter-spacing: 1px;
     }
     #cambiar-boton-1 {
         display: none;
     }
     #cambiar-boton-2 {
         padding: .5vh 1.5vw;
-        font-size: 1.3em;
-        border: 2px solid rgb(0, 0, 25);
+        font-size: 1em;
+        border: 1.7px solid rgb(0, 0, 25);
     }
     #cambiar-flex {
-        height: 40vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -114,32 +114,33 @@
     }
     /* PASOS */
     #pasos {
-        height: 110vh;
+        height: 60vh;
+        margin: 0px 10vw;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
     #pasos div {
-        width: 80%;
-        height: 25%;
+        width: 100%;
+        height: 20%;
         display: flex;
-        flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
+        border: 3px solid rgb(0, 0, 25);
     }
     #pasos i {
         font-size: 2.5em;
     }
     #pasos a {
-        font-size: 1.8em;
+        font-size: 1em;
     }
     .pasos-text {
         display: none;
     }
     /* CONTACTO */
     #contacto {
-        height: 80vh;
+        height: 55vh;
         margin: 0px 10vw;
         display: flex;
         flex-direction: column;
@@ -147,8 +148,8 @@
         align-items: center;
     }
     #contacto-title {
-        font-size: 2em;
-        letter-spacing: 1.2px;
+        font-size: 1.7em;
+        letter-spacing: 1px;
     }
     form {
         width: 100%;
@@ -170,7 +171,7 @@
         font-size: 2em;
     }
     #footer2 {
-        font-size: 0.8em;
+        font-size: .8em;
         letter-spacing: 0.8px;
     }
 }
@@ -324,6 +325,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
+        border: 5px solid rgb(0, 0, 25);
     }
     #pasos i {
         position: absolute;
@@ -343,17 +345,19 @@
     }
     /* CONTACTO */
     #contacto {
-        height: 80vh;
+        height: 90vh;
         margin: 0px 5vw;
         position: relative;
     }
     #contacto-title {
+        position: absolute;
+        top: 7.5%;
         font-size: 3em;
         letter-spacing: 1.5px;
     }
     form {
         position: absolute;
-        top: 17.5%;
+        top: 22.5%;
         width: 100%;
     }
     input {

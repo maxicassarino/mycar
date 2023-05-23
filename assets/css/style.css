@@ -125,10 +125,6 @@ a {
     align-items: center;
 }
 
-#pasos div {
-    border: 5px solid rgb(0, 0, 25);
-}
-
 .pasos-title::after {
     content: "";
     width: 0;
