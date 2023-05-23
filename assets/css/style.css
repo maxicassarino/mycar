@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -15,32 +15,31 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     color: rgb(0, 0, 25);
+    padding: 3vh 5vw;;
 }
 
 
 /* HEADER */
 
-header {
-    padding: 20px 80px;
+#nav {
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a {
+#nav a {
     color: white;
 }
 
-h1 {
-    font-size: 30px;
+#nav-title {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 #nav-links {
-    width: 700px;
+    width: 45vw;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -63,13 +62,34 @@ h1 {
 
 /* MAIN */
 
-main {
-    padding: 0px 80px;
-}
-
 a {
     color: rgb(0, 0, 25);
     text-decoration: none;
+}
+
+.titulos {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+.titulos::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 25);
+    margin: auto;
+    display: block;
+}
+
+.titulos:hover::after {
+    width: 100%;
+    transition: width 0.5s linear;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 
@@ -82,27 +102,26 @@ a {
 
 #portada h2 {
     color: white;
-    width: 40%;
+    width: 40vw;
     position: absolute;
-    top: 10%;
-    font-size: 40px;
+    top: 10vh;
+    font-size: 2.5em;
     font-weight: 100;
     letter-spacing: 2px;
 }
 
 #portada a {
-    padding: 10px;
+    padding: 1.5vh;
     position: absolute;
-    top: 35%;
+    top: 35vh;
     color: white;
-    border: 2px solid white;
-    border-radius: 20px;
+    border: 1px solid white;
 }
 
 #portada a:hover {
     color: rgb(0, 0, 25);
     background-color: white;
-    transition: 2s;
+    transition: 1s;
 }
 
 
@@ -110,6 +129,7 @@ a {
 
 #primer {
     height: 100vh;
+    margin: 0px 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,33 +140,7 @@ a {
 }
 
 #primer div {
-    width: 50%;
     text-align: center;
-}
-
-.titulos {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing: 1.5px;
-}
-
-a h3::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: rgb(0, 0, 25);
-    margin: auto;
-    display: block;
-}
-
-a h3:hover::after {
-    width: 70%;
-    transition: width 0.5s linear;
-}
-
-p {
-    font-size: 25px;
 }
 
 
@@ -154,13 +148,13 @@ p {
 
 #ofertas {
     height: 100vh;
+    margin: 0px 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #ofertas div {
-    width: 50%;
     text-align: center;
 }
 
@@ -172,58 +166,58 @@ p {
 /* CAMBIAR */
 
 #cambiar {
-    margin: 0px 80px;
-    height: 80vh;
+    margin: 0px 5vw;margin: 0px 5vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
-#tituloCambiar {
-    padding-bottom: 20px;
-    font-size: 50px;
+#cambiar-title {
+    position: absolute;
+    top: 22.5%;
+    font-size: 3em;
     letter-spacing: 1.5px;
 }
 
-#flexCambiar {
+#cambiar-flex {
     display: flex;
     justify-content: space-between;
 }
 
-#textoCambiar {
-    padding-bottom: 40px;
+#cambiar-text {
+    position: absolute;
+    top: 40%;
 }
 
-#botonCambiar {
-    padding: 5px 10px;
-    font-size: 20px;
+#cambiar-boton {
+    position: absolute;
+    top: 55%;
+    padding: 1vh 1vw;
+    font-size: 1.3em;
     border: 2px solid rgb(0, 0, 25);
-    border-radius: 30px;
 }
 
-#botonCambiar:hover {
+#cambiar-boton:hover {
     color: white;
     background-color: rgb(0, 0, 25);
-    transition: 2s;
+    transition: 1s;
 }
 
-#caracteristicas {
-    width: 32.5%;
+#cambiar-flex-carac {
+    margin-top: 12vh;
 }
 
 .caracteristicas {
     display: flex;
     align-items: center;
-    padding-bottom: 40px;
-}
-
-.caracteristicas p {
-    font-size: 20px;
+    margin-bottom: 5vh;
 }
 
 .caracteristicas i {
-    padding-right: 20px;
-    font-size: 25px;
+    padding-right: 2vw;
+    font-size: 1.5em;
 }
 
 
@@ -246,19 +240,19 @@ p {
     position: relative;
 }
 
-.simbolosPasos {
+#pasos i {
     position: absolute;
     top: 15%;
-    font-size: 50px;
+    font-size: 3em;
 }
 
 #pasos a {
     position: absolute;
-    top: 32.5%;
-    font-size: 35px;
+    top: 35%;
+    font-size: 2.3em;
 }
 
-a h4::after {
+.pasos-title::after {
     content: "";
     width: 0;
     height: 2px;
@@ -267,42 +261,91 @@ a h4::after {
     display: block;
 }
 
-a h4:hover::after {
+.pasos-title:hover::after {
     width: 100%;
     transition: width 0.5s linear;
 }
 
-.textoPasos {
+.pasos-text {
     position: absolute;
     top: 60%;
-    padding: 0px 40px;
+    padding: 0px 5vh;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 
-/* AUTOS */
+/* CONTACTO */
 
-#autos {
-    height: 200vh;
+#contacto {
+    height: 80vh;
+    margin: 0px 5vw;
+    position: relative;
+}
+
+#contacto-title {
+    font-size: 3em;
+    letter-spacing: 1.5px;
+}
+
+form {
+    position: absolute;
+    top: 17.5%;
+    width: 100%;
+}
+
+input {
+    font-family: "Titillium";
+    width: 100%;
+    margin: 3vh 0vw;
+    padding: 1.5vh;
+    font-size: 1.1em;
+    border: 1px solid rgb(0, 0, 25);;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 25);
+}
+
+input:focus {
+    background-color: rgb(0, 0, 25);
+    color: white;
+    transition: 1s;
+}
+
+input:focus::placeholder {
+    color: white;
+    transition: 1s;
+}
+
+#submit {
+    color: rgb(0, 0, 25);
+    background-color: white;
+}
+
+#submit:hover {
+    background-color: rgb(0, 0, 25);;
+    color: white;
+    transition: 1s;
+}
+
+
+/* FOOTER */
+
+footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#autos a div {
-    display: flex;
-    justify-content: space-evenly;
+#footer1 {
+    font-size: 2.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
-.imagenes {
-    width: 25%;
-    height: 60%;
-    padding: 100px 0px;
-    filter: grayscale(100%);
-}
-
-.imagenes:hover {
-    filter: grayscale(0%);
-    transition: 1.5s;
+#footer2 {
+    font-size: 1em;
+    letter-spacing: 1px;
 }
