@@ -28,17 +28,17 @@
     }
     /* PORTADA */
     #portada {
-        height: 35vh;
+        height: 40vh;
         padding-left: 4vw; 
         background: url(../images/Inicio/separador2.jpg);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
     #portada h2 {
-        width: 55vw;
+        width: 65vw;
         top: 3vh;
-        font-size: .9em;
-        letter-spacing: 1.2px;
+        font-size: 1.3em;
+        letter-spacing: 1px;
     }
     #portada a {
         display: none;
@@ -61,7 +61,7 @@
         text-align: center;
     }
     #primer2 img {
-        width: 55%;
+        width: 65%;
     }
     /* OFERTAS */
     #ofertas {
@@ -73,7 +73,7 @@
         align-items: center;
     }
     #ofertas img {
-        width: 55%;
+        width: 65%;
     }
     /* CAMBIAR */
     #cambiar {
@@ -85,7 +85,7 @@
         text-align: center;
     }
     #cambiar-title {
-        font-size: 1.7em;
+        font-size: 1.5em;
         letter-spacing: 1px;
     }
     #cambiar-boton-1 {
@@ -148,7 +148,7 @@
         align-items: center;
     }
     #contacto-title {
-        font-size: 1.7em;
+        font-size: 1.5em;
         letter-spacing: 1px;
     }
     form {
@@ -160,18 +160,21 @@
         padding: 1vh;
         font-size: 1em;
     }
+    #submit {
+        width: 100%;
+    }
     /* FOOTER */
     footer {
-        padding: 1vh 4vw;
+        margin: 1vh 10vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     #footer1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     #footer2 {
-        font-size: .8em;
+        font-size: .5em;
         letter-spacing: 0.8px;
     }
 }
