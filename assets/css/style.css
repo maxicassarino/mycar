@@ -17,20 +17,6 @@ body {
     letter-spacing: 5px;
 }
 
-#nav-links a::after {
-    content: "";
-    width: 0;
-    height: 0.5px;
-    background: white;
-    margin: auto;
-    display: block;
-}
-
-#nav-links a:hover::after {
-    width: 100%;
-    transition: width 0.5s linear;
-}
-
 
 /* MAIN */
 
@@ -42,20 +28,6 @@ a {
 .titulos {
     font-weight: bolder;
     letter-spacing: 1.5px;
-}
-
-.titulos::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: rgb(0, 0, 25);
-    margin: auto;
-    display: block;
-}
-
-.titulos:hover::after {
-    width: 100%;
-    transition: width 0.5s linear;
 }
 
 
@@ -81,13 +53,6 @@ a {
     color: rgb(0, 0, 25);
     background-color: white;
     transition: 1s;
-}
-
-
-/* OFERTAS */
-
-#ofertas div {
-    text-align: center;
 }
 
 
@@ -122,20 +87,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.pasos-title::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: rgb(0, 0, 25);
-    margin: auto;
-    display: block;
-}
-
-.pasos-title:hover::after {
-    width: 100%;
-    transition: width 0.5s linear;
 }
 
 .pasos-text {
@@ -179,7 +130,7 @@ input:focus::placeholder {
 
 /* FOOTER */
 
-#footer1 {
+h5 {
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 5px;

@@ -22,6 +22,7 @@
     /* MAIN */
     .titulos {
         font-size: 1.7em;
+        color: white;
     }
     p {
         font-size: 1em;
@@ -46,34 +47,45 @@
         top: 35vh;
     }
     /* PRIMER 0KM */
-    #primer1 {
-        display: none;
+    #primer {
+        height: 50vh;
+        margin: 0px 10vw;
+        position: relative;
     }
-    #primer2 {
-        height: 60vh;
-        margin: 0px 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #primer2 div {
+    #primer div {
+        position: absolute;
+        top: 37.5%;
+        left: 4%;
         text-align: center;
+        color: white;
     }
-    #primer2 img {
-        width: 75%;
+    #primer img {
+        position: absolute;
+        top: 12%;
+        width: 100%;
+        filter: brightness(0.5);
     }
     /* OFERTAS */
-    #ofertas {
-        height: 65vh;
-        margin: 0px 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+    #ofertas1 {
+        display: none;
     }
-    #ofertas img {
-        width: 75%;
+    #ofertas2 {
+        height: 55vh;
+        margin: 0px 10vw;
+        position: relative;
+    }
+    #ofertas2 img {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        filter: brightness(0.5);
+    }
+    #ofertas2 div {
+        position: absolute;
+        top: 40%;
+        left: 6%;
+        text-align: center;
+        color: white;
     }
     /* CAMBIAR */
     #cambiar {
@@ -170,7 +182,7 @@
         margin-bottom: 3vh;
         text-align: center;
     }
-    #footer1 {
+    h5 {
         font-size: 1.5em;
     }
 }
@@ -219,10 +231,34 @@
         justify-content: space-between;
         list-style: none;
     }
+    #nav-links a::after {
+        content: "";
+        width: 0;
+        height: 0.5px;
+        background: white;
+        margin: auto;
+        display: block;
+    }
+    #nav-links a:hover::after {
+        width: 100%;
+        transition: width 0.5s linear;
+    }
     /* MAIN */
     .titulos {
         font-size: 3em;
         text-transform: uppercase;
+    }
+    .titulos::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: rgb(0, 0, 25);
+        margin: auto;
+        display: block;
+    }
+    .titulos:hover::after {
+        width: 100%;
+        transition: width 0.5s linear;
     }
     p {
         font-size: 1.5em;
@@ -242,32 +278,35 @@
         top: 35vh;
     }
     /* PRIMER 0KM */
-    #primer1 {
+    #primer {
         height: 100vh;
         margin: 0px 5vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    #primer1 img {
+    #primer img {
         width: 40%;
     }
-    #primer1 div {
+    #primer div {
         text-align: center;
     }
-    #primer2 {
-        display: none;
-    }
     /* OFERTAS */
-    #ofertas {
+    #ofertas1 {
         height: 100vh;
         margin: 0px 5vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    #ofertas img {
+    #ofertas1 img {
         width: 40%;
+    }
+    #ofertas1 div {
+        text-align: center;
+    }
+    #ofertas2 {
+        display: none;
     }
     /* CAMBIAR */
     #cambiar {
@@ -337,6 +376,18 @@
         top: 35%;
         font-size: 2.3em;
     }
+    .pasos-title::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: rgb(0, 0, 25);
+        margin: auto;
+        display: block;
+    }
+    .pasos-title:hover::after {
+        width: 100%;
+        transition: width 0.5s linear;
+    }
     .pasos-text {
         position: absolute;
         top: 60%;
@@ -351,7 +402,7 @@
     }
     #contacto-title {
         position: absolute;
-        top: 7.5%;
+        top: 5%;
         font-size: 3em;
         letter-spacing: 1.5px;
     }
@@ -370,7 +421,7 @@
     footer {
         text-align: center;
     }
-    #footer1 {
+    h5 {
         font-size: 2.2em;
         font-weight: 100;
         letter-spacing: 5px;
