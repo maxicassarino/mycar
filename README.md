@@ -2,7 +2,7 @@
 
 # MYCAR
 
-Este proyecto se trata de una tienda de pelotas oficiales de la FIFA.
+Website for an e-commerce site about car sales.
 
 # Inicio
 
