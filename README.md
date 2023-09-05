@@ -1,9 +1,9 @@
-# Desarrollador: Máximo Cassarino
+# Developer: Máximo Cassarino
 
 # MYCAR
 
-Website for an e-commerce site about car sales.
+Website for an e-commerce site about car sales. (Unfinished).
 
-# Inicio
+# Home
 
 ![image](https://github.com/maxicassarino/mycar/blob/main/assets/images/inicio.png)
