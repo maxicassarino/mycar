@@ -1,6 +1,6 @@
 # MYCAR
 
-Website for an e-commerce site about car sales. (Unfinished).
+Website for an e-commerce about car sales. (Unfinished).
 
 # Home
 
