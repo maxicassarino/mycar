@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
     /* HEADER */
     header {
         display: flex;
@@ -31,7 +32,7 @@
     #portada {
         height: 40vh;
         padding-left: 4vw; 
-        background: url(../images/Inicio/separador2.jpg);
+        background-image: url(../images/Inicio/separador2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -46,8 +47,25 @@
     }
     #portada-boton-2 {
         padding: 1vh;
-        top: 15vh;
         font-size: .8em;
+    }
+    /* PRIMER 0KM */
+    #primer1 {
+        display: none;
+    }
+    #primer2 {
+        height: 40vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Primer\ 0km.jpg);
+        color: white;
+    }
+    /* OFERTAS */
+    #ofertas1 {
+        display: none;
+    }
+    #ofertas2 {
+        height: 45vh;
+        margin: 5vh 10vw;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Cotizar.jpg);
     }
     /* CAMBIAR */
     #cambiar {
@@ -106,24 +124,6 @@
     .pasos-text {
         display: none;
     }
-    /* PRIMER 0KM */
-    #primer1 {
-        display: none;
-    }
-    #primer2 {
-        height: 40vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Primer\ 0km.jpg);
-        color: white;
-    }
-    /* OFERTAS */
-    #ofertas1 {
-        display: none;
-    }
-    #ofertas2 {
-        height: 45vh;
-        margin: 5vh 10vw;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Cotizar.jpg);
-    }
     /* CONTACTO */
     #contacto {
         height: 65vh;
@@ -173,7 +173,7 @@
 
 
 
-@media (min-width: 551px) and (max-width: 1214px) {
+@media screen and (min-width: 551px) and (max-width: 1214px) {
     /* HEADER */
     header {
         display: flex;
@@ -215,6 +215,22 @@
     #portada-boton-2 {
         padding: 1.5vh;
         top: 20vh;
+    }
+    /* PRIMER 0KM */
+    #primer1 {
+        display: none;
+    }
+    #primer2 {
+        height: 60vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Primer\ 0km.jpg);
+    }
+    /* OFERTAS */
+    #ofertas1 {
+        display: none;
+    }
+    #ofertas2 {
+        height: 65vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Cotizar.jpg);
     }
     /* CAMBIAR */
     #cambiar {
@@ -273,22 +289,6 @@
     .pasos-text {
         display: none;
     }
-    /* PRIMER 0KM */
-    #primer1 {
-        display: none;
-    }
-    #primer2 {
-        height: 60vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Primer\ 0km.jpg);
-    }
-    /* OFERTAS */
-    #ofertas1 {
-        display: none;
-    }
-    #ofertas2 {
-        height: 65vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Cotizar.jpg);
-    }
     /* CONTACTO */
     #contacto {
         height: 75vh;
@@ -341,7 +341,7 @@
 
 
 
-@media (min-width: 1215px) {
+@media screen and (min-width: 1215px) {
     body {
         background: url(../images/Inicio/separador2.jpg);
         background-size: contain;
@@ -414,6 +414,40 @@
         top: 35vh;
     }
     #portada-boton-2 {
+        display: none;
+    }
+    /* PRIMER 0KM */
+    #primer1 {
+        height: 100vh;
+        margin: 0px 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #primer1 img {
+        width: 40%;
+    }
+    #primer1 div {
+        text-align: center;
+    }
+    #primer2 {
+        display: none;
+    }
+    /* OFERTAS */
+    #ofertas1 {
+        height: 100vh;
+        margin: 0px 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ofertas1 img {
+        width: 40%;
+    }
+    #ofertas1 div {
+        text-align: center;
+    }
+    #ofertas2 {
         display: none;
     }
     /* CAMBIAR */
@@ -496,40 +530,6 @@
         top: 60%;
         padding: 0vh 2vw;
         font-size: 1.4em;
-    }
-    /* PRIMER 0KM */
-    #primer1 {
-        height: 100vh;
-        margin: 0px 5vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #primer1 img {
-        width: 40%;
-    }
-    #primer1 div {
-        text-align: center;
-    }
-    #primer2 {
-        display: none;
-    }
-    /* OFERTAS */
-    #ofertas1 {
-        height: 100vh;
-        margin: 0px 5vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #ofertas1 img {
-        width: 40%;
-    }
-    #ofertas1 div {
-        text-align: center;
-    }
-    #ofertas2 {
-        display: none;
     }
     /* CONTACTO */
     #contacto {
