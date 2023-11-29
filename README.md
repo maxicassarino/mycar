@@ -1,6 +1,6 @@
 # MYCAR
 
-Landing page for a car sales business.
+Landing page for a car sales business. (Coderhouse Project)
 
 # Home
 
