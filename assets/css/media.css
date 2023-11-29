@@ -46,6 +46,7 @@
         display: none;
     }
     #portada-boton-2 {
+        top: 15vh;
         padding: 1vh;
         font-size: .8em;
     }
