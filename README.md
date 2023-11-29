@@ -1,6 +1,6 @@
 # MYCAR
 
-Homepage for a car sales business. (Unfinished)
+Landing page for a car sales business.
 
 # Home
 
