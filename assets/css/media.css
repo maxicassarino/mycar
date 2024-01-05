@@ -340,18 +340,20 @@ footer {
 
 
 @media screen and (min-width: 1101px) {
-    body {
-        background: url(../images/Inicio/separador2.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
     /* HEADER */
+    #contenedor {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
     header {
         width: 1024px;
         padding: 30px 0px;
-        margin: 0 auto;
         font-size: 16px;
-        max-width: 1024px;
+        position: absolute;
+        background-color: transparent;
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
     }
     header a {
         color: white;
@@ -380,21 +382,29 @@ footer {
     /* MAIN */
     main {
         margin: 0 auto;
-        max-width: 1024px;
     }
     /* PORTADA */
     #portada {
-        height: 550px;
+        height: 800px;
+        background: url(../images/Inicio/separador2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+    #contenedor-portada {
+        max-width: 1024px;
+        margin: 0 auto;
     }
     #portada h2 {
         width: 500px;
-        top: 75px;
+        top: 150px;
         font-size: 35px;
         letter-spacing: 2.5px;
     }
     #portada-boton-1 {
         padding: 15px 25px;
-        top: 250px;
+        top: 300px;
     }
     /* TITULOS */
     .titulos {
@@ -424,6 +434,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 1024px;
     }
     #primer1 img {
         width: 40%;
@@ -442,6 +453,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 1024px;
     }
     #ofertas1 img {
         width: 40%;
@@ -457,6 +469,7 @@ footer {
         margin: 100px auto;
         justify-content: center;
         position: relative;
+        max-width: 1024px;
     }
     #cambiar-title {
         position: absolute;
@@ -493,6 +506,7 @@ footer {
         height: 500px;
         width: 100%;
         margin: 50px auto;
+        max-width: 1024px;
     }
     #pasos div {
         height: 80%;
@@ -533,6 +547,7 @@ footer {
         width: 100%;
         margin: 75px auto 50px;
         justify-content: space-around;
+        max-width: 1024px;
     }
     #contacto-title {
         font-size: 3em;
@@ -556,11 +571,15 @@ footer {
 @media screen and (min-width: 1501px) {
     /* PORTADA */
     #portada {
-        height: 800px;
+        height: 900px;
     }
     #portada h2 {
         width: 600px;
-        font-size: 40px;
+        top: 175px;
+        font-size: 45px;
+    }
+    #portada-boton-1 {
+        top: 350px;
     }
 }
 
@@ -572,16 +591,21 @@ footer {
         font-size: 18px;
     }
     /* PORTADA */
+    #portada {
+        height: 1000px;
+    }
     #portada h2 {
         width: 700px;
+        top: 200px;
         font-size: 50px;
     }
     #portada-boton-1 {
         padding: 20px 30px;
-        top: 300px;
+        top: 400px;
+        font-size: 18px;
     }
     /* PRIMER 0KM */
     #primer1 {
-        margin: 5vh auto 50px;
+        margin: 50px auto;
     }
 }
