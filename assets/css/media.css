@@ -5,49 +5,99 @@
     scroll-behavior: smooth;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media screen and (max-width: 550px) {
+#cambiar {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#cambiar-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pasos {
+    justify-content: space-between;
+}
+
+#pasos div {
+    width: 30%;
+    flex-direction: column;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    margin: 30px 0vw;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
     /* HEADER */
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1vh 4vw;
+        padding: 10px 40px;
+    }
+    h1 {
+        font-size: 1.5em;
     }
     #nav1 {
         display: none;
     }
-    #nav-links {
-        display: none;
-    }
-    /* MAIN */
-    .titulos {
-        font-size: 1.7em;
-        color: white;
-    }
-    p {
-        font-size: 1em;
-    }
     /* PORTADA */
     #portada {
-        height: 40vh;
-        padding-left: 4vw; 
-        background-image: url(../images/Inicio/separador2.jpg);
+        height: 500px;
+        padding-left: 40px; 
+        background: url(../images/Inicio/separador2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
     #portada h2 {
-        width: 75vw;
-        top: 3vh;
-        font-size: 1.3em;
+        width: 275px;
+        top: 70px;
+        font-size: 20px;
         letter-spacing: 1px;
     }
     #portada-boton-1 {
-        display: none;
+        padding: 8.5px 15px;
+        font-size: 12px;
+        top: 175px;
     }
-    #portada-boton-2 {
-        top: 15vh;
-        padding: 1vh;
+    /* TITULOS */
+    .titulos {
+        font-size: 1.3em;
+        color: white;
+    }
+    p {
         font-size: .8em;
     }
     /* PRIMER 0KM */
@@ -55,71 +105,71 @@
         display: none;
     }
     #primer2 {
-        height: 40vh;
+        width: 300px;
+        height: 250px;
+        margin: 100px auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Primer\ 0km.jpg);
-        color: white;
     }
     /* OFERTAS */
     #ofertas1 {
         display: none;
     }
     #ofertas2 {
-        height: 45vh;
-        margin: 5vh 10vw;
+        width: 300px;
+        height: 250px;
+        margin: 100px auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Cotizar.jpg);
     }
     /* CAMBIAR */
     #cambiar {
-        height: 55vh;
-        margin: 0px 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        height: 450px;
+        margin: 125px auto;
+        justify-content: space-around;
         text-align: center;
     }
+    #cambiar-flex {
+        height: 325px;
+        flex-direction: column;
+        align-items: center;
+    }
     #cambiar-title {
-        font-size: 1.7em;
+        font-size: 1.5em;
         letter-spacing: 1px;
     }
     #cambiar-boton-1 {
         display: none;
     }
     #cambiar-boton-2 {
-        padding: .5vh 1.5vw;
+        padding: 10px 30px;
         font-size: 1em;
-        border: 1.7px solid rgb(0, 0, 25);
-    }
-    #cambiar-flex {
-        height: 35vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        border: 2px solid rgb(0, 0, 25);
     }
     #cambiar-flex-carac {
-        height: 15vh;
+        height: 175px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     .caracteristicas i {
-        padding-right: 4vw;
+        padding-right: 40px;
+        font-size: 1.3em;
     }
     /* PASOS */
     #pasos {
-        height: 60vh;
-        margin: 0px 10vw;
+        height: 300px;
+        margin: 75px;
         flex-direction: column;
     }
     #pasos div {
         width: 100%;
         height: 20%;
+        flex-direction: row;
     }
     #pasos i {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     #pasos a {
-        font-size: 1em;
+        font-size: 1.3em;
         font-weight: 100;
     }
     .pasos-text {
@@ -127,205 +177,156 @@
     }
     /* CONTACTO */
     #contacto {
-        height: 65vh;
-        margin: 0px 10vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        height: 550px;
+        margin: 150px 75px 75px;
+        justify-content: space-between;
         align-items: center;
     }
     #contacto-title {
-        font-size: 1.5em;
+        font-size: 2.5em;
         letter-spacing: 1px;
     }
-    form {
-        width: 100%;
-    }
     input {
-        width: 100%;
-        margin: 3vh 0vw;
-        padding: 1vh;
         font-size: 1em;
     }
     #submit {
         width: 100%;
-        border-radius: 0%;
     }
     /* FOOTER */
     footer {
-        margin-bottom: 3vh;
-        text-align: center;
+        margin-bottom: 50px;
     }
     h5 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 551px) and (max-width: 1214px) {
-    /* HEADER */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1vh 4vw;
+@media screen and (min-width: 550px) and (max-width: 1100px){
+    /* PORTADA */
+    #portada h2 {
+        width: 350px;
+        font-size: 25px;
     }
-    #nav1 {
-        display: none;
+    #portada-boton-1 {
+        padding: 10px 20px;
+        font-size: 14px;
     }
-    #nav-links {
-        display: none;
-    }
-    /* MAIN */
+    /* TITULOS */
     .titulos {
+        font-size: 2.3em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    /* PRIMER 0KM */
+    #primer2 {
+        width: 500px;
+        height: 400px;
+    }
+    /* OFERTAS */
+    #ofertas2 {
+        width: 500px;
+        height: 400px;
+    }
+    /* CAMBIAR */
+    #cambiar {
+        height: 475px;
+        margin: 175px auto;
+        justify-content: space-between;
+    }
+    #cambiar-flex {
+        height: 375px;
+    }
+    #cambiar-title {
         font-size: 2.5em;
-        color: white;
+    }
+    #cambiar-boton-2 {
+        font-size: 1.2em;
+    }
+    .caracteristicas i {
+        font-size: 1.5em;
+    }
+    /* PASOS */
+    #pasos {
+        height: 500px;
+        margin: 100px;
+    }
+    #pasos i {
+        font-size: 2.5em;
+    }
+    #pasos a {
+        font-size: 1.7em;
+    }
+    /* CONTACTO */
+    #contacto {
+        margin: 150px 100px 75px;
+    }
+    input {
+        font-size: 1.3em;
+    }
+    /* FOOTER */
+    h5 {
+        font-size: 2.5em;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    /* PORTADA */
+    #portada {
+        height: 600px;
+    }
+    #portada h2 {
+        width: 450px;
+        top: 80px;
+        font-size: 30px;
+    }
+    #portada-boton-1 {
+        font-size: 16px;
+        top: 225px;
+    }
+    /* TITULOS */
+    h1 {
+        font-size: 2em;
+    }
+    .titulos {
+        font-size: 3em;
     }
     p {
         font-size: 1.5em;
     }
-    /* PORTADA */
-    #portada {
-        height: 60vh;
-        padding-left: 6vw; 
-        background: url(../images/Inicio/separador2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    #portada h2 {
-        width: 65vw;
-        top: 6vh;
-        font-size: 2em;
-        letter-spacing: 1px;
-    }
-    #portada-boton-1 {
-        display: none;
-    }
-    #portada-boton-2 {
-        padding: 1.5vh;
-        top: 20vh;
-    }
     /* PRIMER 0KM */
-    #primer1 {
-        display: none;
-    }
     #primer2 {
-        height: 60vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Primer\ 0km.jpg);
+        width: 600px;
+        height: 500px;
     }
     /* OFERTAS */
-    #ofertas1 {
-        display: none;
-    }
     #ofertas2 {
-        height: 65vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Inicio/Cotizar.jpg);
+        width: 600px;
+        height: 500px;
     }
     /* CAMBIAR */
-    #cambiar {
-        height: 65vh;
-        margin: 0px 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-    #cambiar-title {
-        font-size: 2.5em;
-        letter-spacing: 1px;
-    }
-    #cambiar-boton-1 {
-        display: none;
+    #cambiar-flex {
+        height: 400px;
     }
     #cambiar-boton-2 {
-        padding: .5vh 1.5vw;
-        font-size: 1.5em;
-        border: 1.7px solid rgb(0, 0, 25);
-    }
-    #cambiar-flex {
-        height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #cambiar-flex-carac {
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .caracteristicas i {
-        padding-right: 4vw;
+        font-size: 1.3em;
     }
     /* PASOS */
     #pasos {
-        height: 70vh;
-        margin: 0px 10vw;
-        flex-direction: column;
+        height: 200px;
+        margin: 100px;
+        flex-direction: row;
     }
     #pasos div {
-        width: 100%;
-        height: 20%;
-    }
-    #pasos i {
-        font-size: 2.5em;
-    }
-    #pasos a {
-        font-size: 1.7em;
-        font-weight: 100;
-    }
-    .pasos-text {
-        display: none;
+        width: 30%;
+        height: 100%;
+        flex-direction: column;
     }
     /* CONTACTO */
     #contacto {
-        height: 75vh;
-        margin: 0px 10vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #contacto-title {
-        font-size: 2.5em;
-        letter-spacing: 1px;
-    }
-    form {
-        width: 100%;
-    }
-    input {
-        width: 100%;
-        margin: 3vh 0vw;
-        padding: 1.7vh;
-        font-size: 1.3em;
-    }
-    #submit {
-        width: 100%;
-        border-radius: 0%;
-    }
-    /* FOOTER */
-    footer {
-        margin-bottom: 4vh;
-        text-align: center;
-    }
-    h5 {
-        font-size: 2.5em;
-    }
-    h1 {
-        font-size: 2.5em;
+        margin: 150px 100px 50px;
     }
 }
 
@@ -338,23 +339,19 @@
 
 
 
-
-
-
-
-@media screen and (min-width: 1215px) {
+@media screen and (min-width: 1101px) {
     body {
         background: url(../images/Inicio/separador2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        padding: 3vh 5vw;
     }
     /* HEADER */
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
+        width: 1024px;
+        padding: 30px 0px;
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 1024px;
     }
     header a {
         color: white;
@@ -363,7 +360,7 @@
         display: none;
     }
     #nav-links {
-        width: 45vw;
+        width: 650px;
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -381,8 +378,27 @@
         transition: width 0.5s linear;
     }
     /* MAIN */
+    main {
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+    /* PORTADA */
+    #portada {
+        height: 550px;
+    }
+    #portada h2 {
+        width: 500px;
+        top: 75px;
+        font-size: 35px;
+        letter-spacing: 2.5px;
+    }
+    #portada-boton-1 {
+        padding: 15px 25px;
+        top: 250px;
+    }
+    /* TITULOS */
     .titulos {
-        font-size: 3em;
+        font-size: 50px;
         text-transform: uppercase;
     }
     .titulos::after {
@@ -398,29 +414,13 @@
         transition: width 0.5s linear;
     }
     p {
-        font-size: 1.5em;
-    }
-    /* PORTADA */
-    #portada {
-        height: 100vh;
-    }
-    #portada h2 {
-        width: 40vw;
-        top: 10vh;
-        font-size: 2.5em;
-        letter-spacing: 2px;
-    }
-    #portada-boton-1 {
-        padding: 1.5vh;
-        top: 35vh;
-    }
-    #portada-boton-2 {
-        display: none;
+        font-size: 1.4em;
     }
     /* PRIMER 0KM */
     #primer1 {
-        height: 100vh;
-        margin: 0px 5vw;
+        height: 700px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -436,8 +436,9 @@
     }
     /* OFERTAS */
     #ofertas1 {
-        height: 100vh;
-        margin: 0px 5vw;
+        height: 700px;
+        width: 100%;
+        margin: 50px auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -453,54 +454,48 @@
     }
     /* CAMBIAR */
     #cambiar {
-        margin: 0px 5vw;
-        height: 90vh;
-        position: relative;
-        display: flex;
-        flex-direction: column;
+        margin: 100px auto;
         justify-content: center;
+        position: relative;
     }
     #cambiar-title {
         position: absolute;
-        top: 22.5%;
+        top: 7.5%;
         font-size: 3em;
         letter-spacing: 1.5px;
     }
-    #cambiar-flex {
-        display: flex;
-        justify-content: space-between;
-    }
     #cambiar-text {
         position: absolute;
-        top: 40%;
+        top: 35%;
+        font-size: 1.4em;
     }
     #cambiar-boton-1 {
         position: absolute;
-        top: 55%;
-        padding: 1vh 1vw;
-        font-size: 1.3em;
+        top: 63.5%;
+        padding: 10px 30px;
+        font-size: 1.4em;
         border: 2px solid rgb(0, 0, 25);
     }
     #cambiar-boton-2 {
         display: none;
     }
     #cambiar-flex-carac {
-        margin-top: 12vh;
+        margin-top: 105px;
     }
     .caracteristicas {
-        margin-bottom: 5vh;
+        margin-bottom: 50px;
     }
     .caracteristicas i {
-        padding-right: 2vw;
+        padding-right: 30px;
     }
     /* PASOS */
     #pasos {
-        height: 100vh;
+        height: 500px;
+        width: 100%;
+        margin: 50px auto;
     }
     #pasos div {
-        width: 25%;
-        height: 60%;
-        flex-direction: column;
+        height: 80%;
         position: relative;
         border: 5px solid rgb(0, 0, 25);
     }
@@ -511,8 +506,8 @@
     }
     #pasos a {
         position: absolute;
-        top: 35%;
-        font-size: 2.3em;
+        top: 37.5%;
+        font-size: 2em;
     }
     .pasos-title::after {
         content: "";
@@ -529,39 +524,64 @@
     .pasos-text {
         position: absolute;
         top: 60%;
-        padding: 0vh 2vw;
-        font-size: 1.4em;
+        padding: 0vh 20px;
+        font-size: 1.3em;
     }
     /* CONTACTO */
     #contacto {
-        height: 90vh;
-        margin: 0px 5vw;
-        position: relative;
+        height: 600px;
+        width: 100%;
+        margin: 75px auto 50px;
+        justify-content: space-around;
     }
     #contacto-title {
-        position: absolute;
-        top: 5%;
         font-size: 3em;
         letter-spacing: 1.5px;
     }
-    form {
-        position: absolute;
-        top: 22.5%;
-        width: 100%;
-    }
     input {
-        width: 100%;
-        margin: 3vh 0vw;
-        padding: 1.5vh;
         font-size: 1.1em;
     }
     /* FOOTER */
     footer {
-        text-align: center;
+        padding: 20px 0px 40px;
     }
     h5 {
         font-size: 2.2em;
         font-weight: 100;
         letter-spacing: 5px;
+    }
+}
+
+
+@media screen and (min-width: 1501px) {
+    /* PORTADA */
+    #portada {
+        height: 800px;
+    }
+    #portada h2 {
+        width: 600px;
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1800px) {
+    /* HEADER */
+    header {
+        padding: 50px 0px;
+        font-size: 18px;
+    }
+    /* PORTADA */
+    #portada h2 {
+        width: 700px;
+        font-size: 50px;
+    }
+    #portada-boton-1 {
+        padding: 20px 30px;
+        top: 300px;
+    }
+    /* PRIMER 0KM */
+    #primer1 {
+        margin: 5vh auto 50px;
     }
 }
